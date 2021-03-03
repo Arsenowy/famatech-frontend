@@ -1,3 +1,2 @@
-body {
-  background-color: firebrick;
-  color: #fff; }
+.nav-item > li > a {
+  color: firebrick; }
