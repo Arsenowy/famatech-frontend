@@ -1,5 +1,16 @@
-.nav-item > li > a {
-  color: firebrick; }
+li > a.nav-link {
+  margin: 0 20px;
+  font-size: 1rem;
+  transition: 0.2s all ease-in-out; }
+  li > a.nav-link:hover {
+    font-size: 1.1rem; }
+  li > a.nav-link:focus, li > a.nav-link:active {
+    font-size: 1.05rem; }
+
+.nav__logo {
+  width: 10rem; }
+  .nav__logo--img {
+    width: 100%; }
 
 .slider__row {
   height: 80vh; }
@@ -44,7 +55,7 @@
 
 .btn-wide {
   margin: 0 20px;
-  padding: 10px 25px;
+  padding: 10px 40px;
   box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.05) !important;
   transition: 0.1s ease-in-out all;
   outline: none;
