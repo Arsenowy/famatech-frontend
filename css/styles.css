@@ -41,3 +41,19 @@
   width: 40px;
   height: 40px;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23999999' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e"); }
+
+.btn-wide {
+  margin: 0 20px;
+  padding: 10px 25px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.05) !important;
+  transition: 0.1s ease-in-out all;
+  outline: none;
+  border: none; }
+  .btn-wide:hover {
+    transform: translateY(-4px);
+    box-shadow: 8px 6px 18px rgba(0, 0, 0, 0.05) !important; }
+  .btn-wide:focus, .btn-wide:active {
+    transform: translateY(2px);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.07) !important; }
+  .btn-wide > a {
+    padding: 0; }
