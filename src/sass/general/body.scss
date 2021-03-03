@@ -1,0 +1,9 @@
+body {
+  // prepared for image in background of body
+  //   background-image: url("/src/images/");
+  background-color: rgba($color: #fff, $alpha: 0.9);
+  background-blend-mode: screen;
+}
+.container-fluid {
+  padding: 0;
+}
