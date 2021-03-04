@@ -1,0 +1,32 @@
+.contact {
+  &__main {
+    background-color: $color-blue;
+    color: #fff;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__btn {
+    padding: 10px 30px;
+    font-size: 0.9rem;
+  }
+
+  &__input {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+
+    &::placeholder {
+      color: $color-lightgrey;
+    }
+  }
+}
