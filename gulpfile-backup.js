@@ -1,37 +1,19 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
-var sourcemaps = require('gulp-sourcemaps');
 
-////// image min
-var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
-gulp.task('imagemin', function () {
-  return gulp.src('./src/images/*')
-    .pipe(imagemin({
-      progressive: true,
-      svgoPlugins: [{ removeViewBox: false }],
-      use: [pngquant()]
-    }))
-    .pipe(gulp.dest('./src/images'));
-});
-/////
 // compile scss into css
 
 function style() {
     //1 where is scss
     // return gulp.src('./src/sass/**/*.scss')
     return gulp.src('./src/sass/styles.scss')
-        .pipe(sourcemaps.init())
         //2 pass that file through sass compiler
-        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-        //3 build sorce maps
-        .pipe(sourcemaps.write('.'))
-        //4 where do i save the complied css?
+        .pipe(sass().on('error', sass.logError))
+        //3 where do i save the complied css?
         .pipe(gulp.dest('./css/'))
-        //5 stream changed to all browsers
-        .pipe(browserSync.stream())
-
+        //4 stream changed to all browsers
+        .pipe(browserSync.stream());
 }
 
 function watch() {
