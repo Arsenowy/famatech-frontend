@@ -1,0 +1,16 @@
+.qa {
+  &__title {
+    color: $color-dark;
+    font-size: 1.1rem;
+  }
+
+  &__paragraph {
+    color: $color-grey;
+    font-size: 0.95rem;
+  }
+
+  &__btn {
+    font-size: 0.9rem;
+    padding: 10px 26px;
+  }
+}
