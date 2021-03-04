@@ -1,0 +1,27 @@
+.footer {
+  background-color: darken($color-blue, $amount: 25%);
+
+  &__menu {
+    & li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    width: 125px;
+  }
+
+  &__menu,
+  &__socials {
+    & a {
+      margin: 10px 30px;
+      padding: 0;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+  }
+}
