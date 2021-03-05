@@ -3,10 +3,26 @@
   font-size: 2.2rem;
   color: $color-black;
   margin-bottom: 1.5rem;
+
+  @include media-breakpoint-down(md) {
+    font-size: 1.8rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 1.6rem;
+  }
 }
 
 .paragraph {
   text-align: center;
   color: $color-dark;
   font-size: 1rem;
+
+  @include media-breakpoint-down(md) {
+    font-size: 0.9rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 0.85rem;
+  }
 }

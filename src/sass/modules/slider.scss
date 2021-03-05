@@ -17,11 +17,12 @@
   }
 
   &__header {
-    @include media-breakpoint-down(lg) {
-      font-size: 1.8rem;
+    text-align: left;
+    @include media-breakpoint-down(md) {
+      text-align: center;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
       font-size: 1.6rem;
     }
   }

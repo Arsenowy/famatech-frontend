@@ -1,17 +1,46 @@
 .features {
   &__container {
-    height: 20rem;
-    margin-bottom: 100px;
+    height: auto;
+    margin: 75px 0;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
   }
 
   &__subtitle {
     color: $color-dark;
     font-size: 1rem;
     margin: 0 1rem;
+
+    @include media-breakpoint-down(md) {
+      margin: 0 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1rem;
+      margin: 0.2rem;
+    }
   }
 
   &__text {
     text-align: center;
+  }
+
+  &__paragraph {
+    height: 12rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 0.9rem;
+      height: 14rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 0.8rem;
+      height: 18rem;
+    }
   }
 
   // features carousel buttons
@@ -21,6 +50,16 @@
       height: 2px;
       background-color: $color-grey;
       margin: 0 10px;
+
+      @include media-breakpoint-down(md) {
+        width: 160px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 200px;
+        border-width: 6px;
+      }
+
       &.active {
         height: 3px;
         background-color: $color-blue;
