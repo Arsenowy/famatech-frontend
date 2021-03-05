@@ -8,6 +8,10 @@
   border-radius: 5px;
   font-size: 0.9rem;
 
+  @include media-breakpoint-down(lg) {
+    margin: 0 10px;
+  }
+
   &:hover {
     background-color: $color-white;
     transform: translateY(-2px);

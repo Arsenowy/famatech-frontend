@@ -42,20 +42,17 @@
     </nav>
 
     <!-- ###################   SLIDER   ########################-->
-    <section class="container-fluid">
+    <section class="container-fluid slider">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="row slider__row pt-5">
-                        <div class="col-4 offset-2 my-auto">
+                    <div class="row slider__row">
+                        <div class="col-12 offset-md-1 offset-lg-0 col-md-5  order-md-2 slider__col my-auto">
+                            <img class="slider__col--img" src="src/images/illustration-hero.svg" alt="picture of app">
+                            <div class="slider__col--shape slider__col--shape-normal slider float-end bg-primary"></div>
+                        </div>
+                        <div
+                            class="col-10 offset-2 col-lg-5 offset-md-1 offset-lg-1 col-md-5  my-auto order-md-1 slider__col--text padding-left">
                             <h1 class="slider__header">Prosty menager zakładek</h1>
                             <p class="slider__paragraph">Przejrzysta i łatwa w użyciu aplikacja do organizacji Twoich
                                 stron internetowych. Otwórz nową kartę w przeglądarce i zobacz załadowaną wcześniej
@@ -64,19 +61,16 @@
                             <button type="button" class="btn btn-light">ipsum</button>
 
                         </div>
-                        <div class="col-5 slider__col my-auto">
-                            <img class="slider__col--img" src="src/images/illustration-hero.svg" alt="picture of app">
-                            <div class="slider__col--shape slider__col--shape-normal slider float-end bg-primary"></div>
-                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="row slider__row pt-5">
-                        <div class="col-4 offset-1 slider__col my-auto">
-                            <img class="slider__col--img pb-5" src="src/images/img-slider2.png" alt="picture of app">
+                    <div class="row slider__row">
+                        <div class="col-12 offset-md-1 col-md-5 slider__col my-auto">
+                            <img class="slider__col--img slider__col--img-verticaly pb-md-5"
+                                src="src/images/img-slider2.png" alt="picture of app">
                             <div class="slider__col--shape slider__col--shape-reverse float-end bg-primary"></div>
                         </div>
-                        <div class="col-4 offset-1 my-auto">
+                        <div class="col-10  col-lg-5 col-md-5  my-auto slider__col--text">
                             <h1 class="slider__header">Mnóstwo możliwości personalizacji</h1>
                             <p class="slider__paragraph">Zmodyfikuj wygląd zakładek, ich kolejność - personalizuj do
                                 woli! Spraw aby była to Twoja osobista przestrzeń idealnie dopasowana do Ciebie. Spróbuj
@@ -355,8 +349,8 @@
             </a>
         </div>
     </footer>
-    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- bootstrap -->
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -7,3 +7,11 @@ body {
 .container-fluid {
   padding: 0;
 }
+
+.padding-left {
+  padding-left: 6rem;
+
+  @include media-breakpoint-down(xl) {
+    padding-left: 4rem;
+  }
+}
