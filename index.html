@@ -34,12 +34,38 @@
                         <a class="nav-link text-reset" href="#">Kontakt</a>
                     </li>
                 </ul>
-                <button class="btn btn-sm btn__secondary">
-                    <a class="nav-link text-reset" href="#">Login</a>
+                <button data-bs-target="#modal-login" data-bs-toggle="modal" class="btn btn-sm btn__secondary">Login
                 </button>
             </div>
         </div>
     </nav>
+    <!-- Modal login -->
+    <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="modal-login" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-3">
+                    <h5 class="modal-title" id="modal-qa">Login</h5>
+                    <button type="button" class="btn-close qa__close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="model-body px-4 py-3">
+                    <form>
+                        <div class="form-group mb-2">
+                            <label for="exampleInputEmail1">Adres email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                placeholder="Wprowadz adres email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn__primary float-end m-2 mt-4">Zaloguj</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ###################   SLIDER   ########################-->
     <section class="container-fluid slider">
@@ -268,12 +294,12 @@
             </div>
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary mx-auto my-5 btn__primary" data-bs-toggle="modal"
-                data-bs-target="#modal-window">
+                data-bs-target="#modal-learn-more">
                 Więcej informacji
             </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="modal-window" tabindex="-1" aria-labelledby="modal-qa" aria-hidden="true">
+            <!-- Modal learn more -->
+            <div class="modal fade" id="modal-learn-more" tabindex="-1" aria-labelledby="modal-qa" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header p-3">
