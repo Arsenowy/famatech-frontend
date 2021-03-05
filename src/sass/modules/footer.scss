@@ -11,6 +11,11 @@
 
   &__logo {
     width: 125px;
+
+    @include media-breakpoint-down(md) {
+      width: 160px;
+      margin-bottom: 10px;
+    }
   }
 
   &__menu,

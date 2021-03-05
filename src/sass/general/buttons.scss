@@ -9,7 +9,7 @@
   font-size: 0.9rem;
 
   @include media-breakpoint-down(lg) {
-    margin: 0 10px;
+    margin: 10px;
   }
 
   &:hover {
