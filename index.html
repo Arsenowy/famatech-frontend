@@ -34,7 +34,7 @@
                         <a class="nav-link text-reset" href="#">Kontakt</a>
                     </li>
                 </ul>
-                <button class="btn-sm btn-danger btn-wide">
+                <button class="btn btn-sm btn__secondary">
                     <a class="nav-link text-reset" href="#">Login</a>
                 </button>
             </div>
@@ -60,8 +60,8 @@
                             <p class="slider__paragraph">Przejrzysta i łatwa w użyciu aplikacja do organizacji Twoich
                                 stron internetowych. Otwórz nową kartę w przeglądarce i zobacz załadowaną wcześniej
                                 stronę. Spróuj za darmo.</p>
-                            <button type="button" class="btn btn-primary btn-wide">lorem</button>
-                            <button type="button" class="btn btn-light btn-wide">ipsum</button>
+                            <button type="button" class="btn btn__primary">lorem</button>
+                            <button type="button" class="btn btn-light">ipsum</button>
 
                         </div>
                         <div class="col-5 slider__col my-auto">
@@ -81,8 +81,8 @@
                             <p class="slider__paragraph">Zmodyfikuj wygląd zakładek, ich kolejność - personalizuj do
                                 woli! Spraw aby była to Twoja osobista przestrzeń idealnie dopasowana do Ciebie. Spróbuj
                                 za darmo.</p>
-                            <button type="button" class="btn btn-primary btn-wide">lorem</button>
-                            <button type="button" class="btn btn-light btn-wide">ipsum</button>
+                            <button type="button" class="btn btn__primary">lorem</button>
+                            <button type="button" class="btn btn-light">ipsum</button>
 
                         </div>
                     </div>
@@ -179,7 +179,7 @@
                     <p class="card-text cards__text cards__paragraph">Minimalnie wersja 62
                     </p>
                     <img class="cards__spacer my-2" src="src/images/bg-dots.svg" alt="">
-                    <a href="#" class="btn btn-primary cards__btn m-3">Dodaj i zainstaluj</a>
+                    <a href="#" class="btn btn-primary btn__primary m-3">Dodaj i zainstaluj</a>
                 </div>
             </div>
             <div class="col-3 card">
@@ -189,7 +189,7 @@
                     <p class="card-text cards__text cards__paragraph">Minimalnie wersja 55
                     </p>
                     <img class="cards__spacer my-2" src="src/images/bg-dots.svg" alt="">
-                    <a href="#" class="btn btn-primary cards__btn m-3">Dodaj i zainstaluj</a>
+                    <a href="#" class="btn btn-primary btn__primary m-3">Dodaj i zainstaluj</a>
                 </div>
             </div>
             <div class="col-3 card">
@@ -199,7 +199,7 @@
                     <p class="card-text cards__text cards__paragraph">Minimalnie wersja 46
                     </p>
                     <img class="cards__spacer my-2" src="src/images/bg-dots.svg" alt="">
-                    <a href="#" class="btn btn-primary cards__btn m-3">Dodaj i zainstaluj</a>
+                    <a href="#" class="btn btn-primary btn__primary m-3">Dodaj i zainstaluj</a>
                 </div>
             </div>
         </div>
@@ -277,7 +277,7 @@
                 </div>
             </div>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary mx-auto my-5 qa__btn" data-bs-toggle="modal"
+            <button type="button" class="btn btn-primary mx-auto my-5 btn__primary" data-bs-toggle="modal"
                 data-bs-target="#modal-window">
                 Więcej informacji
             </button>
@@ -311,8 +311,7 @@
                             </ul>
                         </div>
                         <div class="modal-footer p-3">
-                            <button type="button" class="btn btn-secondary qa__btn"
-                                data-bs-dismiss="modal">Zamknij</button>
+                            <button type="button" class="btn btn__primary" data-bs-dismiss="modal">Zamknij</button>
                         </div>
                     </div>
                 </div>
@@ -325,13 +324,13 @@
         <div class="col-8 offset-2 d-flex flex-column align-items-center">
             <h4 class="contact__subtitle mt-5">35.000+ osób już spróbowało</h4>
             <h2 class="contact__title my-5 col-6">Pozostań na bieżąco z tym czym się zajmujemy</h2>
-            <form class="row col-6" action="">
-                <div class="col-7">
+            <form class="row col-auto flex-column flex-md-row" action="">
+                <div class="col-7 my-auto">
                     <input class="form-control contact__input" placeholder="Wpis swój adres email" id="contact-email"
                         name="contact-email" type="email">
                 </div>
                 <div class="col-5">
-                    <button class="btn btn-danger contact__btn">Skontaktuj się z nami</button>
+                    <button type="submit" class="btn btn-danger btn__secondary">Skontaktuj się z nami</button>
                 </div>
             </form>
         </div>
