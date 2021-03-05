@@ -276,7 +276,47 @@
                     </div>
                 </div>
             </div>
-            <a class="btn btn-primary mx-auto my-5 qa__btn" href="#">Więcej informacji</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary mx-auto my-5 qa__btn" data-bs-toggle="modal"
+                data-bs-target="#modal-window">
+                Więcej informacji
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-window" tabindex="-1" aria-labelledby="modal-qa" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header p-3">
+                            <h5 class="modal-title" id="modal-qa">Więcej pytań</h5>
+                            <button type="button" class="btn-close qa__close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="qa__list">
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita asperiores
+                                    maiores consectetur, fugit officia numquam sequi molestias atque vero impedit, sed
+                                    quaerat magnam amet suscipit!</li>
+                                <li>Vel dolorum labore esse tenetur assumenda sunt alias sit similique, quia iste
+                                    blanditiis soluta quos corrupti cupiditate, eos excepturi impedit mollitia! Maxime
+                                    veniam impedit sequi!</li>
+                                <li>Fuga, consectetur quae? Itaque id consectetur iste nam eos dolor, architecto aliquid
+                                    tempora odio, necessitatibus ea hic doloribus quas inventore, deserunt ipsum
+                                    similique? Officia, iure?</li>
+                                <li>Dolorem nam minima incidunt molestias fugit, voluptatum ut ullam quis harum eos iure
+                                    omnis accusantium repudiandae alias. Iusto alias obcaecati ex doloribus atque fugiat
+                                    explicabo?</li>
+                                <li>Voluptas laboriosam veniam tempore, magni ad sapiente, voluptatem expedita vero
+                                    labore corporis maiores. Distinctio exercitationem harum asperiores hic iure magni
+                                    aliquam ex, molestias saepe at.</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer p-3">
+                            <button type="button" class="btn btn-secondary qa__btn"
+                                data-bs-dismiss="modal">Zamknij</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
