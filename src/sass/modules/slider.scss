@@ -16,6 +16,10 @@
     }
   }
 
+  &__paragraph {
+    color: var(--color-dark);
+  }
+
   &__header {
     text-align: left;
     @include media-breakpoint-down(md) {

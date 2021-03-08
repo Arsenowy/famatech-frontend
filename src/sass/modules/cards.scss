@@ -7,6 +7,7 @@
   }
 
   &__title {
+    color: var(--color-dark);
     font-size: 1.4rem;
   }
 
@@ -16,7 +17,7 @@
 
   &__paragraph {
     font-size: 0.95rem;
-    color: $color-grey;
+    color: var(--color-grey);
   }
 
   &__img {
@@ -27,6 +28,7 @@
 }
 
 .card {
+  background-color: var(--color-darkmode-lite);
   @include media-breakpoint-down(md) {
     max-width: 300px;
     width: 75%;

@@ -1,4 +1,18 @@
+$color-secondary: #fb5958;
+$color-primary: #5168df;
+$color-primary-dark: darken($color-primary, 3%);
+
 :root {
+  --color-darkmode: #fff;
+  --color-darkmode-lite: #fff; //color for body bg color
+  --color-dark: #333; //color for paragraph
+  --color-grey: #777;
+  --color-lightgrey: #bbb;
+  --color-black: #000;
+
+  --color-primary: #5168df;
+  --color-secondary: #fb5958;
+
   --gradient-btn: linear-gradient(
     60deg,
     rgba(111, 133, 247, 1) 0%,
@@ -16,8 +30,9 @@
 body {
   // prepared for image in background of body
   //   background-image: url("/src/images/");
-  background-color: rgba($color: #fff, $alpha: 0.9);
+  background-color: var(--color-darkmode);
   background-blend-mode: screen;
+  transition: all ease-in-out 0.3s;
 }
 .container-fluid {
   padding: 0;

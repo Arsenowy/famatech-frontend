@@ -1,7 +1,7 @@
 .heading {
   text-align: center;
   font-size: 2.2rem;
-  color: $color-black;
+  color: var(--color-black);
   margin-bottom: 1.5rem;
 
   @include media-breakpoint-down(md) {
@@ -15,7 +15,7 @@
 
 .paragraph {
   text-align: center;
-  color: $color-dark;
+  color: var(--color-dark);
   font-size: 1rem;
 
   @include media-breakpoint-down(md) {

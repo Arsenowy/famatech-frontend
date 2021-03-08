@@ -1,11 +1,11 @@
 .qa {
   &__title {
-    color: $color-dark;
+    color: var(--color-dark);
     font-size: 1.1rem;
   }
 
   &__paragraph {
-    color: $color-grey;
+    color: var(--color-grey);
     font-size: 0.95rem;
   }
 

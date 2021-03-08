@@ -2,7 +2,7 @@ li > a.nav-link {
   margin: 0 20px;
   font-size: 1rem;
   transition: 0.2s all ease-in-out;
-
+  color: var(--color-black) !important;
   @include media-breakpoint-down(lg) {
     font-size: 0.9rem;
     margin: 0 15px;
