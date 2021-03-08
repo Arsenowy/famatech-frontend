@@ -24,8 +24,15 @@
   }
 
   &__input {
+    display: inline-block;
     padding: 10px 20px;
     font-size: 0.9rem;
+    flex: 2;
+    max-width: 600px;
+    @include media-breakpoint-down(sm) {
+      width: 80%;
+      margin-bottom: 10px;
+    }
 
     &::placeholder {
       color: $color-lightgrey;
