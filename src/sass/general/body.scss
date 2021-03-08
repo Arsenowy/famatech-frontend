@@ -1,3 +1,18 @@
+:root {
+  --gradient-btn: linear-gradient(
+    60deg,
+    rgba(111, 133, 247, 1) 0%,
+    rgba(81, 104, 223, 1) 28%,
+    rgba(81, 104, 223, 1) 74%,
+    rgba(70, 93, 209, 1) 100%
+  );
+  --gradient-shape: linear-gradient(
+    270deg,
+    #{$color-primary} 35%,
+    #{$color-primary-dark} 100%
+  );
+}
+
 body {
   // prepared for image in background of body
   //   background-image: url("/src/images/");

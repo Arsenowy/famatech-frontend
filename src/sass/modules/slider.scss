@@ -83,7 +83,7 @@
       position: absolute;
       top: 50%;
       z-index: 0;
-
+      background-image: var(--gradient-shape);
       @include media-breakpoint-down(lg) {
         --circleRadious: 15vw;
       }
@@ -107,7 +107,7 @@
       width: var(--circleRadious);
       border-radius: 50%;
       margin-left: var(--circleRadious);
-      background-color: inherit;
+      background: $color-primary;
     }
   }
 }

@@ -1,6 +1,8 @@
 .contact {
   &__main {
-    background-color: $color-blue;
+    background: var(--gradient-btn);
+    background-size: 400%;
+    animation: bg-animation 5s infinite;
     color: #fff;
     text-align: center;
   }
