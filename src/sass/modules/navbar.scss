@@ -3,8 +3,21 @@ li > a.nav-link {
   font-size: 1rem;
   transition: 0.2s all ease-in-out;
 
+  @include media-breakpoint-down(lg) {
+    font-size: 0.9rem;
+    margin: 0 15px;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin: 0 10px;
+  }
+
   &:hover {
     font-size: 1.1rem;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 1rem;
+    }
   }
   &:focus,
   &:active {
@@ -12,8 +25,27 @@ li > a.nav-link {
   }
 }
 .nav {
+  &__icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-image: url("/src/images/icon-hamburger.svg");
+    mask-mode: cover;
+    filter: brightness(100%);
+    border-radius: 1px;
+
+    &:hover {
+      filter: brightness(200%) saturate(25%);
+    }
+  }
+
   &__logo {
     width: 10rem;
+
+    @include media-breakpoint-down(md) {
+      width: 8rem;
+    }
     &--img {
       width: 100%;
     }
