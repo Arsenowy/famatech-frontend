@@ -3,6 +3,7 @@ li > a.nav-link {
   font-size: 1rem;
   transition: 0.2s all ease-in-out;
   color: var(--color-black) !important;
+
   @include media-breakpoint-down(lg) {
     font-size: 0.9rem;
     margin: 0 15px;
@@ -43,8 +44,12 @@ li > a.nav-link {
   &__logo {
     width: 10rem;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       width: 8rem;
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 10rem;
     }
     &--img {
       width: 100%;

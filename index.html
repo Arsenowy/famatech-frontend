@@ -13,7 +13,7 @@
 
 <body>
     <nav class="navbar navbar-expand-sm">
-        <div class="container-md my-lg-4 mt-sm-2 mt-1 px-4 px-md-1">
+        <div class="container-lg my-lg-4 mt-sm-2 mt-2 px-4 px-md-4">
             <div class="nav__logo">
                 <a href="#home"><img class="nav__logo--img" src="src/images/logo-bookmark.png" alt="Bookmark logo"></a>
             </div>
@@ -22,8 +22,9 @@
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <div class="nav__icon"></div>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
-                <ul class="navbar-nav my-2 my-lg-0 navbar-nav ms-sm-2" style="--bs-scroll-height: 100px;">
+            <div class="collapse navbar-collapse align-items-center justify-content-end" id="navbarScroll">
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav ms-sm-2 d-sm-none d-md-flex"
+                    style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
                         <a class="nav-link text-reset" href="#features-section">Możliwości</a>
                     </li>
@@ -34,14 +35,15 @@
                         <a class="nav-link text-reset" href="#contact-section">Kontakt</a>
                     </li>
                 </ul>
-                <button data-bs-target="#modal-login" data-bs-toggle="modal" class="btn btn-sm btn__secondary">Login
-                </button>
-                <div class="form-group my-3">
+                <div class="form-group my-3 my-md-2">
                     <span class="switch switch-sm">
                         <input type="checkbox" class="switch" id="switch-sm">
                         <label class="toggle-label" for="switch-sm">Tryb ciemny</label>
                     </span>
                 </div>
+                <button data-bs-target="#modal-login" data-bs-toggle="modal" class="btn btn-sm btn__secondary">Login
+                </button>
+
             </div>
         </div>
     </nav>
