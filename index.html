@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-sm">
         <div class="container-md my-lg-4 mt-sm-2 mt-1 px-4 px-md-1">
             <div class="nav__logo">
-                <a href="#"><img class="nav__logo--img" src="src/images/logo-bookmark.png" alt="Bookmark logo"></a>
+                <a href="#home"><img class="nav__logo--img" src="src/images/logo-bookmark.png" alt="Bookmark logo"></a>
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -25,13 +25,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
                 <ul class="navbar-nav my-2 my-lg-0 navbar-nav ms-sm-2" style="--bs-scroll-height: 100px;">
                     <li class="nav-item">
-                        <a class="nav-link text-reset" href="#">Możliwości</a>
+                        <a class="nav-link text-reset" href="#features-section">Możliwości</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-reset" href="#">Cennik</a>
+                        <a class="nav-link text-reset" href="#downloads">Cennik</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-reset" href="#">Kontakt</a>
+                        <a class="nav-link text-reset" href="#contact-section">Kontakt</a>
                     </li>
                 </ul>
                 <button data-bs-target="#modal-login" data-bs-toggle="modal" class="btn btn-sm btn__secondary">Login
@@ -68,7 +68,7 @@
     </div>
 
     <!-- ###################   SLIDER   ########################-->
-    <section class="container-fluid slider">
+    <section id="home" class="container-fluid slider">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -83,8 +83,10 @@
                             <p class="slider__paragraph">Przejrzysta i łatwa w użyciu aplikacja do organizacji Twoich
                                 stron internetowych. Otwórz nową kartę w przeglądarce i zobacz załadowaną wcześniej
                                 stronę. Spróuj za darmo.</p>
-                            <button type="button" class="btn btn__primary">lorem</button>
-                            <button type="button" class="btn btn-light">ipsum</button>
+                            <a type="button" href="https://chrome.google.com/webstore/category/extensions?hl=pl"
+                                class="btn btn__primary" target="_blank">Chrome</a>
+                            <a type="button" href="https://addons.mozilla.org/pl/firefox/" target="_blank"
+                                class="btn btn-light">Firefox</a>
 
                         </div>
                     </div>
@@ -101,8 +103,10 @@
                             <p class="slider__paragraph">Zmodyfikuj wygląd zakładek, ich kolejność - personalizuj do
                                 woli! Spraw aby była to Twoja osobista przestrzeń idealnie dopasowana do Ciebie. Spróbuj
                                 za darmo.</p>
-                            <button type="button" class="btn btn__primary">lorem</button>
-                            <button type="button" class="btn btn-light">ipsum</button>
+                            <a type="button" href="https://chrome.google.com/webstore/category/extensions?hl=pl"
+                                class="btn btn__primary" target="_blank">Chrome</a>
+                            <a type="button" href="https://addons.mozilla.org/pl/firefox/" target="_blank"
+                                class="btn btn-light">Firefox</a>
 
                         </div>
                     </div>
@@ -122,7 +126,7 @@
         </div>
     </section>
     <!-- ###################   Features   ########################-->
-    <section class="container">
+    <section id="features-section" class="container">
         <div id="features" class="carousel slide carousel-dark " data-bs-ride="carousel">
             <div class="carousel-indicators flex-column flex-sm-row">
                 <div class="d-flex flex-column align-items-center">
@@ -181,7 +185,7 @@
             </div>
     </section>
     <!-- ###################   Cards   ########################-->
-    <section class="container-fluid">
+    <section id="downloads" class="container-fluid">
         <div class="m-4 ">
             <h2 class="heading">Pobierz rozszerzenie</h2>
             <p class="paragraph">Wspieramy również więcej najpopularniejszych przeglądarek. Daj nam znać jeśli masz
@@ -339,7 +343,7 @@
     </section>
 
     <!-- ###################   Contact   ########################-->
-    <section class="container-fluid contact__main mt-5 py-5">
+    <section id="contact-section" class="container-fluid contact__main mt-5 py-5">
         <div class="col-12 col-md-10 offset-md-1 d-flex flex-column align-items-center">
             <h4 class="contact__subtitle mt-2">35.000+ osób już spróbowało</h4>
             <h2 class="contact__title my-5 col-10 col-md-8">Pozostań na bieżąco z tym czym się zajmujemy</h2>
@@ -360,18 +364,18 @@
     <footer
         class="footer d-flex flex-column flex-md-row align-items-center align-items-md-baseline justify-content-around py-5">
         <ul class="footer__menu nav flex-column flex-md-row">
-            <a class="footer__logo" href="#">
+            <a class="footer__logo" href="#home">
                 <img class="footer__logo" src="src/images/logo-bookmark-white.png" alt="">
             </a>
-            <li><a href="#">Możliwości</a></li>
-            <li><a href="#">Cennik</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="#features-section">Możliwości</a></li>
+            <li><a href="#downloads">Cennik</a></li>
+            <li><a href="#contact-section">Kontakt</a></li>
         </ul>
         <div class="footer__socials d-flex">
-            <a href="#">
+            <a target="_blank" href="https://pl-pl.facebook.com/famatechpl/">
                 <img src="src/images/icon-facebook.svg" alt="Facebook">
             </a>
-            <a href="#">
+            <a target="_blank" href="https://twitter.com/?lang=pl">
                 <img src="src/images/icon-twitter.svg" alt="Twitter">
             </a>
         </div>
