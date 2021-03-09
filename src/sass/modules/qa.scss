@@ -1,4 +1,11 @@
+section.section-qa {
+  padding: 3rem 0;
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
+}
 .qa {
+  max-width: 1050px;
   &__title {
     color: var(--color-dark);
     font-size: 1.1rem;
