@@ -20,6 +20,7 @@ gulp.task('imagemin', function () {
 
 function style() {
     //1 where is scss
+    // all files
     // return gulp.src('./src/sass/**/*.scss')
     return gulp.src('./src/sass/styles.scss')
         .pipe(sourcemaps.init())

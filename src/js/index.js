@@ -17,9 +17,10 @@ function lightmode() {
     document.documentElement.style.setProperty("--color-grey", "#777");
     document.querySelector(".nav__logo--img").src="src/images/logo-bookmark.png";
 }
-
+//dark mode button
 var toggleButton = document.querySelector("#switch-sm");
 
+//change modal close buttons
 function changeCloseButton() {
     modals = document.querySelectorAll(".btn__close");
     modals.forEach(el => {
@@ -28,6 +29,7 @@ function changeCloseButton() {
     });
 }
 
+// boolean t - 1: darkmode active, 0: lightmode active
 var t = false;
 toggleButton.addEventListener('click', e => {
     setTimeout(() => {
